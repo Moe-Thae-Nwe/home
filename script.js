@@ -39,10 +39,11 @@ const cardInfo = [
 ]
 
 function App() {
-  const cards = cardInfo.map((card) => 
+  const cards = cardInfo.map((card) => {
     <div>
       <a href = {card.link}><p>{card.title}</p></a>
     </div>
+                             }
   )
   return(
     <>
