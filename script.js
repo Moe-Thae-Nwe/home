@@ -25,10 +25,6 @@ const cardInfo = [
     link: "http://moe-thae-nwe.github.io/markdown-previewer"
   },
   {
-    title: "Drum Machine",
-    link: "http://moe-thae-nwe.github.io/drum-machine"
-  },
-  {
     title: "Calculator",
     link: "http://moe-thae-nwe.github.io/calculator"
   },
