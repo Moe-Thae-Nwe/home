@@ -1,7 +1,7 @@
 const { useState } = React;
 const { createRoot } = ReactDOM;
 
-const root = ReactDOM.createRoot(document.getElementById("root"))
+const root = createRoot(document.getElementById("root"))
 
 const cardInfo = [
   {
@@ -36,11 +36,12 @@ const cardInfo = [
 
 function App() {
   const cards = cardInfo.map((card) => {
-    <div>
-      <a href = {card.link}><p>{card.title}</p></a>
-    </div>
-                             }
-  )
+    return (
+      <div>
+        <a href = {card.link}><p>{card.title}</p></a>
+      </div>
+    );
+  });
   return(
     <>
       {cards}
